@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Andrii Kravchenko" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <title>Form</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+          <div class="header-row">
+            <div class="header-logo">
+              <a href="#">
+                <img class="logo" src="img/LOGO.png" alt="Logo" />
+              </a>
+            </div>  
+            <div class="header-menu">
+              <nav>
+                <ul class="menu__list">
+                  <li class="menu-link"><a href="#">Company</a></li>
+                  <li class="menu-link"><a href="#">Services</a></li>
+                  <li class="menu-link"><a href="#">FinTech Solutions</a></li>
+                  <li class="menu-link"><a href="#">Products</a></li>
+                  <li class="menu-link"><a href="#">Portfolio</a></li>
+                  <li class="menu-link"><a href="#">Contact us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-button">
+              <button class="search">
+                <img src="img/search.png" alt="search" />
+              </button>
+              <button class="notification">
+                <img src="img/notification.png" alt="notification" />
+              </button>
+              <button class="avatar-icon">
+                <img class="avatar" src="img/Avatar.png" alt="avatar" />
+              </button>
+            </div>
+          </div>
+      </header>
+      <div class="block"></div>
+      <main>
+        <div class="title">
+          <h1>Contact us</h1>
+          <p>Need an experienced and skilled hand with custom IT projects?</p>
+          <p>Fill out the form to get a free consultation.</p>
+        </div>  
+        <form action="#" method="post">
+          <div class="form-container-top">
+            <div class="input-name">
+              <div>
+                <label for="company">Your company name*</label>
+                <input type="text" name="company" id="company" required />
+              </div>
+              <div>
+                <label for="business">Nature of Business*</label>
+                <input type="text" name="business" id="business" required />
+              </div>
+              <div>
+                <label for="data">Data of registration</label>
+                <input
+                  type="date"
+                  placeholder="dd/mm/yyyy"
+                  size="100"
+                  name="data"
+                  id="data"
+                />
+              </div>
+            </div>
+            <div class="input-select" >
+              <div class="select">
+                <label for="country">Country of registration*</label>
+                <select name="country" id="country" required>
+                  <option value="1">Select</option>
+                  <option value="2">Option 01</option>
+                  <option value="3">Option 02</option>
+                  <option value="4">Option 03</option>
+                </select>
+              </div>
+              <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" />
+              </div>
+              <div>
+                <label for="postcode">Postcode</label>
+                <input type="text" name="postcode" id="postcode" />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="form-container-center">
+            <div class="input-contact">
+              <div>
+                <label for="name">Contact name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div>
+                <label for="phone">Contact phone</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+              <div>
+                <label for="email-required">Email*</label>
+                <input type="email" name="email" id="email-required" required />
+              </div>
+            </div>
+            <div>
+              <div class="idea-item">
+                <label for="idea">Let’s talk about your idea</label>
+                <textarea
+                  name="idea"
+                  id="idea"
+                  cols="30"
+                  rows="10"
+                  maxlength="320"
+                ></textarea>
+              </div>
+              <div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="100"
+                  list="tickmarks"
+                  class="progress"
+                />
+                <datalist id="tickmarks">
+                  <option value="0" label="0"></option>
+                  <option value="10"></option>
+                  <option value="20"></option>
+                  <option value="30"></option>
+                  <option value="40"></option>
+                  <option value="50"></option>
+                  <option value="60"></option>
+                  <option value="70"></option>
+                  <option value="80"></option>
+                  <option value="90"></option>
+                  <option value="100" label="100"></option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="form-container-bottom">
+            <div>
+              <div class="input-upload">
+                <div class="image-upload">
+                  <img src="img/upload.png" alt="upload file" />
+                </div>
+                <div class="label-upload">
+                  <label for="file">Upload Additional file</label>
+                  <input type="file" accept="image/png, image/jpg, image/gif, image/jpeg" name="file" id="file" />
+                </div>
+              </div>
+              <p class="size">File size of your documents should not exceed 10MB</p>
+              <div class="button-submit">
+                <input type="submit"/>
+              </div>
+              <div class="radio-item">
+                <div>
+                  <input type="radio" name="protectdata" id="protectdata" />
+                </div>
+                <div class="protect-item">  
+                  <label for="protectdata"
+                    >I want to protect my data by signing an NDA</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="signing-item">
+                  <input class="input-size-border" type="checkbox" name="protect" id="protect" value="data" />
+                  <label for="protect">I want to protect my data by signing an NDA</label>
+              </div>
+              <div class="accept-item">
+                <div>
+                  <input class="input-size"
+                    type="checkbox"
+                    name="terms"
+                    id="terms"
+                    value="conditions"
+                    checked
+                  />
+                </div>
+                <div>
+                  <label for="terms"
+                    >I have read and accept the Terms and Conditions</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <div class="footer-row">
+          <div>
+            <h2>Career</h2>
+            <p class="send-item">
+              If you are interested in working at Logo <br> send us your CV to
+              <a href="careers@logo.com">careers@logo.com</a> <br> and we can talk
+            </p>
+            <div class="social-network-item">
+              <div class="instagram">
+                <a href="https://www.instagram.com/"
+                  ><img  src="img/instagram.png" alt="instagram"
+                /></a>
+              </div>
+              <div class="facebook">
+                <a href="https://www.facebook.com/"
+                  ><img src="img/facebook.png" alt="facebook"
+                /></a>
+              </div>
+              <div class="telegram">
+                <a href="https://telegram.org/"
+                  ><img src="img/telegram.png" alt="telegram"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>Offices</h2>
+            <address>
+              United States of America<br />500 5th Avenue Suite 400, NY 10110
+            </address>
+            <address>United Kingdom<br />High St, Bromley BR1 1DN</address>
+            <address>France<br />80 avenue des Terroirs de France, Paris</address>
+          </div>
+          <div>
+            <h2>For Quick Inquiries</h2>
+            <ul>
+              <li>
+                <div class="greatbritain-item">
+                  <img src="img/great_britain.png" alt="greatbritain" />
+                </div>
+                <div>
+                  <a href="tel:+44 7911 123456">+44 7911 123456</a>
+                </div>
+              </li>
+              <li>
+                <div class="usa-item">
+                  <img src="img/usa.png" alt="usa" />
+                </div>  
+                <div>
+                  <a href="tel:+1-212-456-7890">+1-212-456-7890</a>
+                </div>
+              </li>
+            </ul>
+            <form class="newsletter-item">
+              <label for="contact-email">Join our newsletter!</label>
+              <div class="contacts">
+                  <input class="join" type="email" name="email" id="contact-email" placeholder="email" />
+                  <button class="submit-button" type="submit" value="Submit">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="38" height="38" rx="8" fill="#6759FF"/>
+                      <path d="M15.0005 24.6L10.3338 19.9333C9.81382 19.4133 8.98715 19.4133 8.46715 19.9333C7.94715 20.4533 7.94715 21.28 8.46715 21.8L14.0538 27.3867C14.5738 27.9067 15.4138 27.9067 15.9338 27.3867L30.0671 13.2667C30.5871 12.7467 30.5871 11.92 30.0671 11.4C29.5471 10.88 28.7205 10.88 28.2005 11.4L15.0005 24.6Z" fill="#FDFDFD"/>
+                      </svg>
+                  </button>
+              </div>
+            </form>
+          </div>
+        </div>  
+      </footer>
+    </div>
+  </body>
+</html>
